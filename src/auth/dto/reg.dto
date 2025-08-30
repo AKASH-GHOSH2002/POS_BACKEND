@@ -1,0 +1,22 @@
+export class UserRegisterDto {
+  @IsNotEmpty()
+  @MinLength(1)
+  @MaxLength(50)
+  email: string;
+
+  @IsNotEmpty()
+  password: string;
+
+  @IsNotEmpty()
+  @MinLength(1)
+  @MaxLength(50)
+  name: string;
+
+  @IsNotEmpty()
+  workStatus: string;
+
+  @IsNotEmpty()
+  @MinLength(10)
+  @MaxLength(10)
+  mobileNumber: string;
+}
